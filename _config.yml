@@ -28,7 +28,7 @@ twitter_username: hugomacdermott
 github_username:  hmacdope
 
 # Build settings
-theme: architect
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
