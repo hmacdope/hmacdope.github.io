@@ -28,7 +28,7 @@ twitter_username: hugomacdermott
 github_username:  hmacdope
 
 # Build settings
-theme: minimal
+theme: minima
 plugins:
   - jekyll-feed
 
