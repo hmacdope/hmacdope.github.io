@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Biophysics Bonnanza 
+title: Biophysics Bonanza 
 email: hugomacdermott@gmail.com
 description: >-  # this means to ignore newlines until "baseurl:"
   Personal blog of Hugo MacDermott-Opeskin. Documenting my thoughts and experiences as a biophysicist.
@@ -31,6 +31,8 @@ github_username:  hmacdope
 theme: minima
 plugins:
   - jekyll-feed
+
+gem "github-pages", group: :jekyll_plugins
 
 # Exclude from processing.
 # The following items will not be processed, by default.
