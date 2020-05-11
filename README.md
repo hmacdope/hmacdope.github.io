@@ -1,1 +1,1 @@
-Personal website for GSoC 2020
+My personal website (https://hmacdope.github.io)
