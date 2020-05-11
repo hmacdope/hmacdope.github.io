@@ -1,3 +1,12 @@
+name: Hugo MacDermott-Opeskin
 theme: jekyll-theme-architect
-title: Hugo MacDermott-Opeskin
-description: biophysics galore
+title: Biophysics Bazar
+description: learning one wiggling lipid at a time
+
+gems:
+  - jekyll-feed
+
+feed:
+ path blog/atom.xml
+
+
