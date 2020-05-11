@@ -4,12 +4,8 @@ name: Hugo MacDermott-Opeskin
 theme: jekyll-theme-architect
 title: Biophysics Bazar
 description: learning one wiggling lipid at a time
-locale: en_US
 
-owner:
-  bio:memememem
-  email:hugomacdermott@gmail.com
-
+future: true
 
 
 
