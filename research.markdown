@@ -4,8 +4,6 @@ title: Research
 permalink: /research/
 ---
 
-#Research
-
 My current research interests include
 
 * Membrane biophysics
