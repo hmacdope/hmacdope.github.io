@@ -19,16 +19,20 @@ Some challenges have included
 # Lessons learnt
 
 * **If in doubt gmx dump it out**
+
 gmx dump is your best friend when it comes to debugging trajectories, as it can dump any file straight to STDOUT. Don't assume anything about a TNG trajectory until you have a look at the info in gmx dump!
 
 * Its probably not GROMACS
+
 At least so far there have been several instances where it is unclear whether there is a problem with trajectory read or trajectory write.
 So far after investigation the culprit is almost always my code or something about TNG (mostly just me).
 
 * Work in the evening.
+
 Far easier to work in the evening when I can get good feedback quickly and trade back and forth.
 
 * Watch those pointers!
+
 Pointers never fail to confuse me, this is more of a comment than any particular lesson.
 Just be careful and take your time. 
 
