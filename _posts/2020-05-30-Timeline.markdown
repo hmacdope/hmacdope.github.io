@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Timeline"
+date:   2020-05-30 08:58:08 +1000
+categories: 
+---
+
+# Timeline
+
+Short post today, just thought I would post an updated expected timeline for my project.
+A gantt chart [can be found here](https://docs.google.com/spreadsheets/d/1DuJiTzTn38j_G-yLClhLXYSb5xnFLoNlz3MNk5j6N4Q/edit?usp=sharing). This will be updated after consultation with mentors over the next few days. 
