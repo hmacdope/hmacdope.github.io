@@ -32,17 +32,18 @@ As evidenced by a few MRs going awry, there needs to be regression tests to ensu
 
 Be bold, if not many people use the current API or docs, can make some drastic changes without upsetting anyone.
 
-We need better coverage for tests and integration if them into the CI/CD.  Do we want them for every commit or just on merge train (choo choo)?
+We need better coverage for tests and integration and to move them into the CI/CD config.  Do we want them for every commit or just on merge train (choo choo)?
 
-The TNG frame syntax is a bit confusing (to me) and may need tp be changed at some point. At the very lest I will need to add a bit more to the docs.
+The TNG frame syntax is a bit confusing (to me) and may need to be changed at some point. At the very lest I will need to add a bit more to the docs.
 
 I've got the hang of the gitlab setup and how to best manage rebasing, pipelines, merge and linking issues. The only gitlab related thing is that MRs for which we want to squash commits (almost all of them) will have the name of the FIRST commit, so think ahead for the first commit in a new branch.
 
 
 # Next steps
 
-* Change tests to water ensemble for bond information and add a velocities test.
-* Finish googletest regression binary
+* Change tests to water ensemble for bond information and add a velocities test [#6](https://gitlab.com/gromacs/tng/-/issues/9).
+* Finish googletest regression binary [(!16)](https://gitlab.com/gromacs/tng/-/merge_requests/16)
+* Change the CI/CD config to run the tests [(!13)](https://gitlab.com/gromacs/tng/-/merge_requests/13)
 * Try and register the tests with CTest so they work with make test
 * Try and compile the whole thing with the C++ compiler.
 
