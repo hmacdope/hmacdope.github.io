@@ -79,7 +79,7 @@ something i didn't realise is that clang-tidy can do inline fixes with --fix! Wo
 
 # More tests
 
-Briefly, I have added some placeholder low level API tests for the C++ layer, mainly so I can get some test driven development going smoothly.
+Briefly, I have added some placeholder low level API tests for the C++ layer, in [!31](https://gitlab.com/gromacs/tng/-/merge_requests/29) mainly so I can get some test driven development going smoothly.
 
 # Next steps
 
