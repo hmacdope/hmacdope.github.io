@@ -15,7 +15,7 @@ I have started the IO section in the `TngFileReader` and `TngFileWriter` classes
 
 # Unexpected turn of events
 
-In some sad news, my mentor Paul is unwell and has had to reduce his involvement in the project quite a lot. This is somewhat of a problem as I need 2 reviewers to merge code into TNG and being my primary mentor is above the call of duty for Magnus. After some discussion with the mentors, I have decided to switch my timeline around a little bit and focus 2/3 on the PyTNG bindings that was originally slated for the 3rd coding period. 1/3 of my time will be used to continue refactoring the TNG C++. This means that Oliver and Richard can help me, which I look forward too.
+I have decided to switch my timeline around a little bit and focus 2/3 on the PyTNG bindings that was originally slated for the 3rd coding period. 1/3 of my time will be used to continue refactoring the TNG C++. This means that Oliver and Richard can help me, which I look forward too.
 
 
 # Next steps
