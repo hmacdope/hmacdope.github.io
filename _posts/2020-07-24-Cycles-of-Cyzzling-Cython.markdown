@@ -15,7 +15,7 @@ This gets the job done but is far from satisfactory for reasons I will outline b
 
 The counting of "frames" by MD steps means that you have to do a whole bunch of useless blank reads. A TNG file can have as many potentially arbitrary blocks as it wants and it is difficult/wasteful to keep track of all of them. Instead we should try and spool off the blocks sequentially! That makes much much more sense as it will give us data when present only and exactly the types we want, all we need is a matching cdef cython class to hold the information and a way to pull them out of the file.
 
-This sounds easy right?
+This sounds easy right? A draft PR of the start of this can be found in [#32](www.github.com/MDAnalysis/pytng/pull/32).
 
 # Possible problems?
 
