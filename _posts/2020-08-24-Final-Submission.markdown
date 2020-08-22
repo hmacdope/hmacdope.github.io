@@ -41,6 +41,37 @@ tasks and due to this and some changing circumstances, these are all still open
 MRs. I plan on working on these into the future but progress will be slow as I
 do not have solid blocks of time to dedicate. 
 
+All the work I have done on TNG itself can be found in my TNG fork XXXX as well
+as open PRs on the library itself XXXX.
+
+
+# PyTNG time
+
 From here I switched focus a bit to PyTNG, a set of python bindings designed
-for use by MDAnalysis although technically a separate library. 
+for use by MDAnalysis although technically a separate library. This required
+changing gears a little bit as well as learning Cython, which was initially a
+bit of a learning curve for me. 
+
+Firstly I changed the raw TNG libraries exported with the PyTNG itself to
+reflect the bugfixes obtained as part of the earlier improvements to the TNG
+library. This was incorporated as part of #28. I then improved the TNG calls in
+the library itself in #29.
+
+Following some design discussions, we then moved towards a newer design for the
+bindings, so as to be able to read all the blocks available in a TNG file with
+maximal efficency. This was acheived in merging #32 and #38, which were a total
+redesign of the whole PyTNG API. The end result of this was a working
+implementation that can read any TNG block. I also added docs and examples as
+part of #38. Profiling and timings indicated high performance of the bindings,
+with the library largely IO bound at the TNG API (pure C) level.
+
+I plan on extending to TNG writing as well as integrating into MDAnalysis
+following GSOC.
+
+# What have I learnt
+
+# My Experience
+
+
+
 
