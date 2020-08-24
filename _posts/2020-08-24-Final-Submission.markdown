@@ -50,7 +50,8 @@ library [itself](https://gitlab.com/gromacs/tng).
 
 From here I switched focus a bit to
 [PyTNG](https://github.com/MDAnalysis/pytng), a set of python bindings designed
-for use by MDAnalysis although technically a separate library. This required
+for use by MDAnalysis although technically a separate library. I worked on PyTNG
+for pretty much the second half of GSOC. This required
 changing gears a little bit as well as learning Cython, which was initially a
 bit of a learning curve for me. 
 
@@ -78,7 +79,7 @@ I plan on extending to TNG writing as well as integrating into MDAnalysis
 following GSOC. I have raised issues in PyTNG to make sure things that still
 need to be completed are apparent to people following on.
 
-# What have I learnt
+# What have I learnt?
 
 Things I have learned in GSOC include
 
