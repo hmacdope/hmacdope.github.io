@@ -78,7 +78,13 @@ part of [#38](https://github.com/MDAnalysis/pytng/pull/38). Profiling and
 timings indicated high performance of the bindings, with the library largely IO
 bound at the TNG API (pure C) level.
 
-An example of how to use PyTNG to read a TNG file is shown below:
+# What can we do now?
+
+The TNG library now has a regression-test suite and can be compiled as C++ 14 with a modern compiler. The groundwork is also laid for further improvements of the library.
+
+There are now also a set of functional Python bindings for the TNG format that can read any TNG block.
+
+An example of how to use PyTNG to read a TNG file and extract positions is shown below:
 
 ```python
 
@@ -107,9 +113,9 @@ An example of how to use PyTNG to read a TNG file is shown below:
 
 # Looking forward
 
-I plan on extending to TNG writing as well as integrating PyTNG into MDAnalysis
+I plan on extending PyTNG to TNG writing as well as integrating PyTNG into MDAnalysis
 following GSOC. I have raised issues in PyTNG to make sure things that still
-need to be completed are apparent to people following on.
+need to be completed are apparent to people following on. 
 
 # What have I learnt?
 
