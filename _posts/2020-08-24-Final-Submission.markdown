@@ -127,7 +127,7 @@ Things I have learned in GSOC include
 * Cython and Python/C integration
 * Working collaboratively on a diverse global team
 
-# My Experience
+# My experience
 
 GSOC was a fantastic experience for me, as I felt very welcome amongst two
 communities (MDAnalysis and GROMACS). I hope I was able to give back! I was
