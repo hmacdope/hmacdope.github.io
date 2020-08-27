@@ -10,11 +10,14 @@ categories:
 Well well well, here we are at the end of GSOC! What a ride it has been, giving
 me a chance to improve my skills and contribute in ways I never thought would
 be possible. Thanks to all my mentors @acpmnv (Paul), @orbeckst (Oliver) and
-@richardjgowers (Richard) for all the help and guidance.
+@richardjgowers (Richard) for all the help and guidance throughout. 
 
-The purpose of this blog post is to summarize the work I have done and to indicate what is still
-left to do. I will break it down chronologically so that what I have done can
-be followed easily.
+
+
+# Why TNG?
+
+Trajectory storage has proved problematic for the molecular simulation community, due to large file sizes, poor portability and low metadata incorporation. The TNG format designed by GROMACS aims to remove these shortcomings, however it has not seen wide adoption as tooling to support the format is lacking. Creation of new TNG tooling has been hindered by its current design and implementation in older style C code. My [project](https://summerofcode.withgoogle.com/projects/#5116604104310784) centered around improving  implementation and tooling for the TNG format. This was two fold, with the first half of my project working on converting the original library to C++ and the second half on developing some Python bindings.
+
 
 # TNG time
 
@@ -74,6 +77,35 @@ I also added docs and examples as
 part of [#38](https://github.com/MDAnalysis/pytng/pull/38). Profiling and
 timings indicated high performance of the bindings, with the library largely IO
 bound at the TNG API (pure C) level.
+
+An example of how to use PyTNG is shown below:
+
+```python
+
+   import pytng
+   import numpy as np
+
+   with pytng.TNGFileIterator("traj.tng", 'r') as tng:
+
+      # make a numpy array to hold the data using helper function
+      # this array will then be updated in-place 
+      
+      positions = tng.make_ndarray_for_block_from_name("TNG_TRAJ_POSITIONS")
+      
+      # the TNG API uses regular strides for data deposition, here we stride
+      # over the whole trajectory for the frames that have position data
+      # where len(tng) is the total number of steps in the file.
+
+      for ts in range(0, len(tng), tng.block_strides["TNG_TRAJ_POSITIONS"]):
+         # read the integrator timestep, modifying the current_integrator_step
+         tng.read_step(ts)
+         # get the data from the requested block by supplying NumPy array which
+         # is updated in-place
+         tng.current_integrator_step.get_pos(positions)
+
+```
+
+# Looking forward
 
 I plan on extending to TNG writing as well as integrating PyTNG into MDAnalysis
 following GSOC. I have raised issues in PyTNG to make sure things that still
