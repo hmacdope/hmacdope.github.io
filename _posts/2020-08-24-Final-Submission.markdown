@@ -26,9 +26,9 @@ understanding the API and converting the older C style API it to C++.  I worked
 on this for the majority of the bonding period as well as the first and some of
 the second coding period.
 
-First I added tests in [!3](https://gitlab.com/gromacs/tng/-/merge_requests/3) which then revealed problems in the base API that were fixed in [!6](https://gitlab.com/gromacs/tng/-/merge_requests/6) [!12](https://gitlab.com/gromacs/tng/-/merge_requests/12)
+First I added tests in [!3](https://gitlab.com/gromacs/tng/-/merge_requests/3) which then revealed problems in the base API that were fixed in [!6](https://gitlab.com/gromacs/tng/-/merge_requests/6), [!12](https://gitlab.com/gromacs/tng/-/merge_requests/12)
 and [!17](https://gitlab.com/gromacs/tng/-/merge_requests/17).  I then made these additional tests into a formal test suite employing
-googletest in [!16](https://gitlab.com/gromacs/tng/-/merge_requests/16) [!20](https://gitlab.com/gromacs/tng/-/merge_requests/20) and [!21](https://gitlab.com/gromacs/tng/-/merge_requests/21). This revealed some more API elements that could be improved which were
+googletest in [!16](https://gitlab.com/gromacs/tng/-/merge_requests/16), [!20](https://gitlab.com/gromacs/tng/-/merge_requests/20) and [!21](https://gitlab.com/gromacs/tng/-/merge_requests/21). This revealed some more API elements that could be improved which were
 touched up in [!22](https://gitlab.com/gromacs/tng/-/merge_requests/22), [!23](https://gitlab.com/gromacs/tng/-/merge_requests/23) and [!25](https://gitlab.com/gromacs/tng/-/merge_requests/25).
 
 Once we had a test suite that could be used to check library correctness on the
@@ -78,7 +78,7 @@ part of [#38](https://github.com/MDAnalysis/pytng/pull/38). Profiling and
 timings indicated high performance of the bindings, with the library largely IO
 bound at the TNG API (pure C) level.
 
-An example of how to use PyTNG is shown below:
+An example of how to use PyTNG to read a TNG file is shown below:
 
 ```python
 
