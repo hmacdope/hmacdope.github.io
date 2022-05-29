@@ -8,7 +8,7 @@ layout: home
 **Hugo MacDermott-Opeskin**
 
 
-![sheev](/assets/images/sheev.jpg){:height="300px" width="300px"}
+![me](/assets/images/IMG_3593.jpeg){:height="300px" width="300px"}
 
 
 Hi all! My name is Hugo MacDermott-Opeskin and welcome to my blog! I am a graduate of the Australian National University (ANU), where I recieved my B.S.C (Hons) in chemistry, with an advanced chemistry specialization, followed by a PhD in the group of Assoc. Prof Megan O'Mara at the ANU.
