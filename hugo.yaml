@@ -9,7 +9,7 @@ enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
-
+enableEmoji: true
 googleAnalytics: UA-123-45
 
 minify:
@@ -18,17 +18,17 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: "ExampleSite description"
+  title: Hugo MacDermott-Opeskin
+  description: "Hugo MacDermott-Opeskin personal blog and portfolio"
   keywords: [Blog, Portfolio, PaperMod]
   author: Hugo MacDermott-Opeskin
   # author: ["Me", "You"] # multiple authors
   DateFormat: "January 2, 2006"
-  defaultTheme: auto # dark, light
+  defaultTheme: light # dark, light
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: false
@@ -69,8 +69,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Title: "Hugo MacDermott-Opeskin"
+    Content: Musings on computational molecular sciences, programming, and other things.
 
   socialIcons:
     - name: google scholar
