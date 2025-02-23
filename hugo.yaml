@@ -70,7 +70,12 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hugo MacDermott-Opeskin"
-    Content: Musings on computational molecular sciences, programming, and other things.
+    Content: "Musings on computational molecular sciences, programming, and other things.
+
+              Currently building some cool stuff at [OpenADMET](openadmet.org), [ASAP Discovery Consortium](https://asapdiscovery.org/) and [MDAnalysis](https://www.mdanalysis.org/).
+              Chemistry PhD from the Australian National University.
+              
+              Get in touch at hugo.macdermott-opeskin [at] omsf.io"
 
   socialIcons:
     - name: google scholar
